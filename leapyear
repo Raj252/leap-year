@@ -1,18 +1,14 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-public class leapYear 
-{
-    public static void main (String args[])
-    {
-        for (int leapYear = 1900; leapYear <= 2020; leapYear += 4) 
-        {
-            if((leapYear - 1) % 40 == 0) 
-            {
-                System.out.println(" ");
-            }
-            System.out.print(leapYear + "\n");
-        }
-    }
+import java.util.Scanner;
+public class LeapYear {
+   public static void main(String[] args){
+      int year;
+      System.out.println("Enter an Year :: ");
+      Scanner sc = new Scanner(System.in);
+      year = sc.nextInt();
 
+      if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0))
+         System.out.println("Specified year is a leap year");
+      else
+         System.out.println("Specified year is not a leap year");
+   }
 }
