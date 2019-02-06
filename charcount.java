@@ -15,12 +15,12 @@ class charcount
             if((ch == 'a' || ch == 'e' || ch == 'i'|| ch == 'o' || ch == 'u')||(ch == 'A' || ch == 'E' || ch == 'I'|| ch == 'O' || ch == 'U')) 
 			{
                 ++vowels;
-				System.out.println("Vowels");
+				System.out.println("Vowel");
             }
             else if((ch >= 'a'&& ch <= 'z')||(ch >= 'A'&& ch <= 'Z')) 
 			{
 				++consonants;
-				System.out.println("Consonants");
+				System.out.println("Consonant");
             }
 			else
 			{
