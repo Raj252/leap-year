@@ -6,19 +6,19 @@ class number
     {
         int num;
         Scanner sc=new Scanner(System.in);  
-        System.out.print("Input\n");
+        System.out.print("Input:\n");
         num=sc.nextInt();         
         if(num>0)
         {
-            System.out.println("Output"+"\nPositive");
+            System.out.println("Output:"+"\nPositive");
         }
         else if(num<0)
         {
-            System.out.println("Output"+"\nnegative");
+            System.out.println("Output:"+"\nnegative");
         }
         else
         {
-            System.out.println("Output"+"\nZero");
+            System.out.println("Output:"+"\nZero");
         }        
     }
 }
