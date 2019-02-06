@@ -1,30 +1,28 @@
-import java.io.*;
-import java.util.Scanner; 
-class charcount 
-{
+import java.util.Scanner;
+public class vc{
 
-    public static void main(String[] args) 
-	{
-        int vowels = 0, consonants = 0, digits = 0, spaces = 0;
-		
-        char ch;
-        Scanner s= new Scanner(System.in);
-        ch = s.next().charAt(0);
-		
-	
-            if((ch == 'a' || ch == 'e' || ch == 'i'|| ch == 'o' || ch == 'u')||(ch == 'A' || ch == 'E' || ch == 'I'|| ch == 'O' || ch == 'U')) 
-			{
-                ++vowels;
-				System.out.println("Vowel");
-            }
-            else if((ch >= 'a'&& ch <= 'z')||(ch >= 'A'&& ch <= 'Z')) 
-			{
-				++consonants;
-				System.out.println("Consonant");
-            }
-			else
-			{
-				System.out.println("Invalid");
-			}
+    public static void main(String[] args) {
+
+       Scanner input = new Scanner(System.in);
+       char ch = input.next().charAt(0);	
+        switch (ch) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                System.out.println("Vowel");
+                break;
+            default:
+	if(ch >= 'a' && ch <= 'z'|| ch >= 'A' && ch <= 'Z')
+                		System.out.println("Consonant");
+	else
+		System.out.println("Invalid");
+        }
     }
 }
