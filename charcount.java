@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class vc{
+class charcount{
 
     public static void main(String[] args) {
 
