@@ -14,7 +14,7 @@ class alphabetornot
         }
         else
         {
-            System.out.print("Not");
+            System.out.print("No");
         }
     }
 }
