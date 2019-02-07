@@ -19,7 +19,7 @@ class threenumber
 		}
 		else
 		{
-			System.out.println(z)
+			System.out.println(z);
 		}
 	}
 }
